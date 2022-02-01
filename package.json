@@ -1,0 +1,33 @@
+{
+  "name": "goindex-theme-acrou",
+  "version": "1.0.0",
+  "description": "This is a goindex template",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:dev & npm run build:prod",
+    "build:dev": "cross-env GOINEX_APP_API=/api webpack --config webpack/dev.config.js",
+    "build:prod": "webpack --config webpack/prod.config.js",
+    "dev": "cross-env GOINEX_APP_API=/api webpack-dev-server --config webpack/dev.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aicirou/goindex-theme-acrou.git"
+  },
+  "author": "Achirou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aicirou/goindex-theme-acrou/issues"
+  },
+  "homepage": "https://github.com/Aicirou/goindex-theme-acrou#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "cross-env": "^7.0.2",
+    "html-webpack-plugin": "^4.2.0",
+    "vue": "^2.6.11",
+    "vue2-ace-editor": "0.0.15",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
